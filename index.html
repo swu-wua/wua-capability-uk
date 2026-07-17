@@ -298,6 +298,18 @@
       grid-template-columns: 1fr;
       gap: 32px;
     }
+    .lintel-embed {
+      margin-top: 32px;
+    }
+    .lintel-embed-cap {
+      margin-bottom: 14px;
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .lintel-embed-frame { background: #000; }
     .lintel-video-item { position: relative; }
     .lintel-video-item video {
       width: 100%;
@@ -306,12 +318,12 @@
       background: #000;
     }
     .lintel-video-item .lintel-video-cap {
-      margin-top: 12px;
-      font-size: 12px;
-      letter-spacing: 0.14em;
+      margin-bottom: 14px;
+      font-size: 10px;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
-      font-weight: 500;
+      color: var(--accent);
+      font-weight: 600;
     }
   </style>
 </head>
@@ -520,16 +532,26 @@
 
       <div class="lintel-videos">
         <div class="lintel-video-item">
+          <div class="lintel-video-cap">— Lintel Hub · Aerial reconstruction</div>
           <video autoplay muted loop playsinline preload="metadata" poster="">
             <source src="videos/lintel-hub-aerial.mp4" type="video/mp4">
           </video>
-          <div class="lintel-video-cap">— Lintel Hub · Aerial reconstruction</div>
         </div>
         <div class="lintel-video-item">
+          <div class="lintel-video-cap">— Lintel Hub · Interior walkthrough</div>
           <video autoplay muted loop playsinline preload="metadata" poster="">
             <source src="videos/lintel-hub-interior.mp4" type="video/mp4">
           </video>
-          <div class="lintel-video-cap">— Lintel Hub · Interior walkthrough</div>
+        </div>
+      </div>
+
+      <div class="lintel-embed">
+        <div class="lintel-embed-cap">— Lintel Hub Lite · Full demo</div>
+        <div class="lintel-embed-frame">
+          <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1210755610?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lintel Hub Lite · Managing scanned spatial information at scale"></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
       </div>
 
